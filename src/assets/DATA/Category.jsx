@@ -1,29 +1,12 @@
 export const Category = {
     faction:[ {
       name: "Faction",
-<<<<<<< HEAD
-<<<<<<< HEAD
-      img : './src/assets/Feature/Faction.png',
-=======
       img : 'Feature/Faction.png',
->>>>>>> c1607e9 (update2.0)
-=======
-      img : './src/assets/Feature/Faction.png',
->>>>>>> 7104ef8 (Update Category.jsx)
       bg : "#cc7ad6"
-
     },
     {
       name: "Electronocs",
-<<<<<<< HEAD
-<<<<<<< HEAD
-      img : './src/assets/Feature/fs2.png',
-=======
       img : 'Feature/fs2.png',
->>>>>>> c1607e9 (update2.0)
-=======
-      img : './src/assets/Feature/fs2.png',
->>>>>>> 7104ef8 (Update Category.jsx)
       bg : "#f0710a"
     },
     {
