@@ -1,5 +1,4 @@
 import React from 'react'
-import mn1 from '/src/assets/Mens/mn1.png'
 import './card.css'
 function Card({ item }) {
   return (

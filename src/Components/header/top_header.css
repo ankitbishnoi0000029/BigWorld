@@ -69,3 +69,6 @@ ul {
   .header_links:hover{
     color: #ea430b;
   }
+  a.header_links.active{
+    color: #ea430b;
+  }

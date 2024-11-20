@@ -1,14 +1,12 @@
 import React from 'react';
 import Right_box from './Right_box';
 import Card from '../Popular_Products/card/Card';
-import { Data } from '../../DATA/Feature';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './feature.css'
 import { FPdata } from '../../assets/DATA/Featured_Products_data';
 function FeaturedContnaier() {
-  console.log(FPdata.data);
   
   function SampleNextArrow(props) {
     const { className, style, onClick } = props;

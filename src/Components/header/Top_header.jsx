@@ -2,58 +2,59 @@ import React, { useEffect, useState } from 'react'
 import logo from '../../assets/logo/logo.png'
 import './top_header.css'
 import { Icon } from './Search/search'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 function Top_header() {
-  const [scroll,setScroll] = useState(false)
+    const [scroll, setScroll] = useState(false)
 
-    const hendleScroll = () =>{
-      if(window.scrollY>0){
-        setScroll(true);
-      }else{
-        setScroll(false)
-      }
+    const hendleScroll = () => {
+        if (window.scrollY > 0) {
+            setScroll(true);
+        } else {
+            setScroll(false)
+        }
     }
-    useEffect(()=>{
-   window.addEventListener('scroll',hendleScroll);
-    },[])
+    useEffect(() => {
+        window.addEventListener('scroll', hendleScroll);
+    }, [])
     return (
-        <div className={`container-fluid d-flex main_toper_section ${scroll ? 'sticky': ''}`}>
+        <div className={`container-fluid d-flex main_toper_section ${scroll ? 'sticky' : ''}`}>
             <div> <Link to="/">
                 <img className='coman' height={60} width={120} src={logo} alt="" />
             </Link>
             </div>
-           
+
             <div className='list_navbar col-4'>
                 <ul>
                     <li>
-                        <Link className='header_links' to="Faction">Faction</Link>
-                        
+                        <NavLink activeClassName="active" className='header_links' to="Faction">Faction</NavLink>
+
                     </li>
                     <li>
-                    Electronics
+                        <NavLink activeClassName="active" className='header_links' to="electronic">Electronics</NavLink>
                     </li>
                     <li>
-                        Bags
+                        <NavLink activeClassName="active" className='header_links' to="Bags">Bags</NavLink>
                     </li>
                     <li>
-                        Footware
+                        <NavLink activeClassName="active" className='header_links' to="Footware">Footware</NavLink>
                     </li>
                     <li>
-                        Groceries
+                        <NavLink activeClassName="active" className='header_links' to="Groceries">Groceries</NavLink>
                     </li>
                     <li>
-                        beauty
+                        <NavLink activeClassName="active" className='header_links' to="beauty">beauty</NavLink>
                     </li>
                     <li>
-                        Shop
+                        <NavLink activeClassName="active" className='header_links' to="Shop">Shop</NavLink>
                     </li>
+                    
                 </ul>
-             
+
             </div>
             <div className='search_box'>
-            {Icon.Search}
+                {Icon.Search}
                 <input type="search" placeholder="Enter product name" ></input>
-               
+
             </div>
             <div className='my-wish'>
                 {Icon.Love}

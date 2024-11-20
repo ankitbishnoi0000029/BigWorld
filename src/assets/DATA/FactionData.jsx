@@ -6,7 +6,7 @@ export const Faction = {
             star: 5,
             brand: "v-mart",
             bg: "#e8e9ea",
-            img: "src/assets/Mens/f1.png",
+            img: "Mens/f1.png",
             price: 1170
         },
         {
@@ -15,7 +15,7 @@ export const Faction = {
             star: 4,
             brand: "v-mart",
             bg: "#f1f1f1",
-            img: "src/assets/Mens/f2.png",
+            img: "Mens/f2.png",
             price: 1299
         },
         {
@@ -24,7 +24,7 @@ export const Faction = {
             star: 4,
             brand: "fashion-store",
             bg: "#d1d3d4",
-            img: "src/assets/Mens/f3.png",
+            img: "Mens/f3.png",
             price: 1150
         },
         {
@@ -33,7 +33,7 @@ export const Faction = {
             star: 3,
             brand: "stylize",
             bg: "#f7f7f7",
-            img: "src/assets/Mens/f4.png",
+            img: "Mens/f4.png",
             price: 1099
         },
         {
@@ -42,7 +42,7 @@ export const Faction = {
             star: 5,
             brand: "v-mart",
             bg: "#e4e4e4",
-            img: "src/assets/Mens/f5.png",
+            img: "Mens/f5.png",
             price: 1390
         },
         {
@@ -51,7 +51,7 @@ export const Faction = {
             star: 4,
             brand: "stylezone",
             bg: "#ececec",
-            img: "src/assets/Mens/f6.png",
+            img: "Mens/f6.png",
             price: 999
         },
         {
@@ -60,7 +60,7 @@ export const Faction = {
             star: 5,
             brand: "trendz",
             bg: "#e9e9e9",
-            img: "src/assets/Mens/f7.png",
+            img: "Mens/f7.png",
             price: 1440
         },
         {
@@ -69,7 +69,7 @@ export const Faction = {
             star: 3,
             brand: "v-mart",
             bg: "#d0d0d0",
-            img: "src/assets/Mens/f8.png",
+            img: "Mens/f8.png",
             price: 1250
         },
         {
@@ -78,7 +78,7 @@ export const Faction = {
             star: 4,
             brand: "luxury",
             bg: "#f3f3f3",
-            img: "src/assets/Mens/f9.png",
+            img: "Mens/f9.png",
             price: 1330
         },
         {
@@ -87,7 +87,7 @@ export const Faction = {
             star: 5,
             brand: "fashionista",
             bg: "#d9d9d9",
-            img: "src/assets/Mens/f10.png",
+            img: "Mens/f10.png",
             price: 1450
         },
         {
@@ -96,7 +96,7 @@ export const Faction = {
             star: 4,
             brand: "classic-style",
             bg: "#cfcfcf",
-            img: "src/assets/Mens/f11.png",
+            img: "Mens/f11.png",
             price: 1220
         },
         {
@@ -105,7 +105,7 @@ export const Faction = {
             star: 4,
             brand: "urban-wear",
             bg: "#ebebeb",
-            img: "src/assets/Mens/f12.png",
+            img: "Mens/f12.png",
             price: 1300
         },
         {
@@ -114,7 +114,7 @@ export const Faction = {
             star: 5,
             brand: "elite-style",
             bg: "#f2f2f2",
-            img: "src/assets/Mens/f13.png",
+            img: "Mens/f13.png",
             price: 1499
         },
         {
@@ -123,7 +123,7 @@ export const Faction = {
             star: 3,
             brand: "premium-wear",
             bg: "#cccccc",
-            img: "src/assets/Mens/f14.png",
+            img: "Mens/f14.png",
             price: 1120
         },
         {
@@ -132,7 +132,7 @@ export const Faction = {
             star: 5,
             brand: "exclusive",
             bg: "#d5d5d5",
-            img: "src/assets/Mens/f15.png",
+            img: "Mens/f15.png",
             price: 1580
         },
         {
@@ -141,9 +141,8 @@ export const Faction = {
             star: 4,
             brand: "fashion-house",
             bg: "#e2e2e2",
-            img: "src/assets/Mens/f16.png",
+            img: "Mens/f16.png",
             price: 1380
         }
     ]
 };
-

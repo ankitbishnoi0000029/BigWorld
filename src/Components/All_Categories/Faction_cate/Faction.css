@@ -26,9 +26,6 @@
     display: flex;
     align-items: center;
 }
-.all-cate-data nav:hover {
-    border: 1px solid rgba(0, 0, 0, 0.201);
-}
 .newdata_one{
     display: ruby;
 }

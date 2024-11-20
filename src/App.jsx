@@ -10,6 +10,14 @@ import FooterSection from './Components/Footer/FooterSection'
 import { BrowserRouter, Route } from 'react-router-dom'
 import { Routes } from 'react-router-dom'
 import Faction_section from './Components/All_Categories/Faction_cate/Faction_section'
+import Electronics from './Components/All_Categories/Electronics/Electronics'
+import Bags from './Components/All_Categories/Bags/bags'
+import Footware from './Components/All_Categories/Footware/footware'
+import Beauty from './Components/All_Categories/Beauty/beauty'
+import Groceries from './Components/All_Categories/Grocery/Grocery'
+import Jewellery from './Components/All_Categories/Jewellery/Jewellery'
+import Shop from './Components/All_Categories/shop/Shops'
+import Wellness from './Components/All_Categories/Wellness/Wellness'
 function App() {
 
 
@@ -28,6 +36,15 @@ function App() {
       </>
       } />
     <Route path="/Faction" element={<Faction_section/>}/>
+    <Route path="/electronic" element={<Electronics/>}/>
+    <Route path="/Bags" element={<Bags/>}/>
+    <Route path="/Footware" element={<Footware/>}/>
+    <Route path="/Beauty" element={<Beauty/>}/>
+    <Route path="/Groceries" element={<Groceries/>}/>
+    <Route path="/Jewellery" element={<Jewellery/>}/>
+    <Route path="/Beauty" element={<Beauty/>}/>
+    <Route path="/Shop" element={<Shop/>}/>
+    <Route path="/Wellness" element={<Wellness/>}/>
     </Routes>
     <FacilitySection></FacilitySection>
       <FooterSection></FooterSection>

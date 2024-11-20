@@ -1,6 +1,6 @@
 import React from 'react'
 import './Feature.css'
-import { Data } from './Data'
+import { Data } from '../../assets/DATA/Data';
 function Cate_feat() {
 
   return (
