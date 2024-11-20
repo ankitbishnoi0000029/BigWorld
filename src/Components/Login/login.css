@@ -1,0 +1,51 @@
+.login_main{
+    background-color: #ea430b3a;
+    border: none;
+    border-radius: 25px;
+}
+.login_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_text input{
+   
+    padding: 12px 64px;
+    border: none;
+}
+.main_text button{
+    padding: 12px 50px;
+    border: none;
+    background-color: #ea430b;
+    border-radius: 25px;
+    color: white;
+
+    position: relative;
+}
+.icon_send{
+
+    position: relative;
+   left: 20px;
+}
+.main_text{
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+}
+.text_login h1{
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.711);
+}
+.text_login h3{
+    font-size: 20px;
+    padding-bottom: 30px;
+
+    color: rgba(0, 0, 0, 0.404);
+}
+input:focus{
+    border: none;
+    outline: 0px;
+}

@@ -1,0 +1,24 @@
+.detail_address span{
+    font-size: small;
+    color: rgba(0, 0, 0, 0.703);
+}
+.all_p{
+    color: black;
+    font-size: large;
+    font-weight: 800;
+}
+.heading_m h5{
+    font-size: larger;
+    padding: 24px 0px;
+}
+.cate_n nav{
+    padding-bottom: 14px;
+    font-size: small;
+}
+.cate_n nav:hover{
+    cursor: pointer;
+    position: relative;
+    transform: translateX(4px); 
+    transition: all 0.3s ease-in-out;
+    color: #ea430b;
+}
