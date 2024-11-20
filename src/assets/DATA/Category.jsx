@@ -1,13 +1,13 @@
 export const Category = {
     faction:[ {
       name: "Faction",
-      img : '/src/assets/Feature/Faction.png',
+      img : './src/assets/Feature/Faction.png',
       bg : "#cc7ad6"
 
     },
     {
       name: "Electronocs",
-      img : '/src/assets/Feature/fs2.png',
+      img : './src/assets/Feature/fs2.png',
       bg : "#f0710a"
     },
     {
