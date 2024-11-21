@@ -1,6 +1,6 @@
 import React from 'react'
 import FactionFirst from '../Faction_cate/factionFirst'
-import { Faction } from '../../../assets/DATA/FactionData'
+import { Beauty_data } from '../../../assets/DATA/Beauty'
 import Card from '../../Popular_Products/card/Card'
 
 function Beauty() {
@@ -13,7 +13,7 @@ function Beauty() {
                 </div>
                 <div className="col-10 newdata_one">
                     {
-                        Faction.data.map((item, id) => {
+                        Beauty_data.data.map((item, id) => {
 
                             return (
                                 <Card key={id + 4} item={item}>{item.pname} </Card>

@@ -2,6 +2,7 @@ import React from 'react'
 import './Faction.css'
 import { Category } from '../../../assets/DATA/Category'
 import Range from './Range';
+import { NavLink } from 'react-router-dom';
 function FactionFirst() {
     console.log(Category.faction);
     
@@ -10,6 +11,7 @@ function FactionFirst() {
             <div>
                 <div className="all-cate-data">
                 <span className='cate_heading mx-3 fs-5 fw-bold'>Category</span>
+               
                     {
                         Category.faction.map((item,id)=>{
                             return(

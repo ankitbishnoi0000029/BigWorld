@@ -45,7 +45,7 @@ function Top_header() {
                         <NavLink activeClassName="active" className='header_links' to="beauty">beauty</NavLink>
                     </li>
                     <li>
-                        <NavLink activeClassName="active" className='header_links' to="Shop">Shop</NavLink>
+                        <NavLink activeClassName="active" className='header_links' to="Jewellery">Jewellery</NavLink>
                     </li>
                     
                 </ul>

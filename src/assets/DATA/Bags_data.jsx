@@ -1,85 +1,103 @@
-export const Bags = {
+export const Bag_data = {
     data: [
         {
-            tag: "Faction",
-            pname: "Jobayed Hossain...",
+            tag: "Bag",
+            pname: "Leather Travel Bag",
             star: 5,
-            brand: "v-mart",
-            bg: "#e8e9ea",
-            img: "Mens/f1.png",
-            price: 1170
+            brand: "Baggit",
+            bg: "#FF5733", // Solid color
+            img: "Bags/bag1.png",
+            price: 2200
         },
         {
-            tag: "Faction",
-            pname: "Shahina Begum",
+            tag: "Bag",
+            pname: "Canvas Backpack",
             star: 4,
-            brand: "v-mart",
-            bg: "#f1f1f1",
-            img: "Mens/f2.png",
-            price: 1299
+            brand: "Wildcraft",
+            bg: "#9B59B6",
+            img: "Bags/bag2.png",
+            price: 1800
         },
         {
-            tag: "Faction",
-            pname: "Rashid Alvi",
-            star: 4,
-            brand: "fashion-store",
-            bg: "#d1d3d4",
-            img: "Mens/f3.png",
-            price: 1150
+            tag: "Bag",
+            pname: "Designer Handbag",
+            star: 5,
+            brand: "Hidesign",
+            bg: "#2ECC71",
+            img: "Bags/bag3.png",
+            price: 3200
         },
         {
-            tag: "Faction",
-            pname: "Moyeen Khan",
+            tag: "Bag",
+            pname: "Eco-friendly Sling Bag",
             star: 3,
-            brand: "stylize",
-            bg: "#f7f7f7",
-            img: "Mens/f4.png",
-            price: 1099
+            brand: "Baggit",
+            bg: "#3498DB",
+            img: "Bags/bag4.png",
+            price: 1700
         },
         {
-            tag: "Faction",
-            pname: "Sara Hasan",
-            star: 5,
-            brand: "v-mart",
-            bg: "#e4e4e4",
-            img: "Mens/f5.png",
-            price: 1390
-        },
-        {
-            tag: "Faction",
-            pname: "Mariam Jabeen",
+            tag: "Bag",
+            pname: "Leather Duffel Bag",
             star: 4,
-            brand: "stylezone",
-            bg: "#ececec",
-            img: "Mens/f6.png",
-            price: 999
+            brand: "Lavie",
+            bg: "#E74C3C",
+            img: "Bags/bag5.png",
+            price: 2500
         },
         {
-            tag: "Faction",
-            pname: "Tariq Siddiqui",
+            tag: "Bag",
+            pname: "Laptop Backpack",
             star: 5,
-            brand: "trendz",
-            bg: "#e9e9e9",
-            img: "Mens/f7.png",
-            price: 1440
+            brand: "Wildcraft",
+            bg: "#F39C12",
+            img: "Bags/bag6.png",
+            price: 3000
         },
         {
-            tag: "Faction",
-            pname: "Hassan Ali",
+            tag: "Bag",
+            pname: "Tote Bag",
+            star: 2,
+            brand: "Hidesign",
+            bg: "#1ABC9C",
+            img: "Bags/bag7.png",
+            price: 1600
+        },
+        {
+            tag: "Bag",
+            pname: "Travel Duffel",
+            star: 4,
+            brand: "Lavie",
+            bg: "#16A085",
+            img: "Bags/bag8.png",
+            price: 2700
+        },
+        {
+            tag: "Bag",
+            pname: "Weekend Bag",
+            star: 5,
+            brand: "Baggit",
+            bg: "#8E44AD",
+            img: "Bags/bag9.png",
+            price: 3500
+        },
+        {
+            tag: "Bag",
+            pname: "Business Laptop Bag",
             star: 3,
-            brand: "v-mart",
-            bg: "#d0d0d0",
-            img: "Mens/f8.png",
-            price: 1250
+            brand: "Wildcraft",
+            bg: "#D35400",
+            img: "Bags/bag10.png",
+            price: 2300
         },
         {
-            tag: "Faction",
-            pname: "Zara Khan",
+            tag: "Bag",
+            pname: "Messenger Bag",
             star: 4,
-            brand: "luxury",
-            bg: "#f3f3f3",
-            img: "Mens/f9.png",
-            price: 1330
+            brand: "Lavie",
+            bg: "#F1C40F",
+            img: "Bags/bag11.png",
+            price: 1900
         }
     ]
 }

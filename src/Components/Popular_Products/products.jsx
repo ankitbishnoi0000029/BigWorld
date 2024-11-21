@@ -4,7 +4,7 @@ import { PPdata } from '../../assets/DATA/Popular_products';
 
 function Products() {
   return (
-    <div className='container py-3'>
+    <div className='container py-3 postioin-relative'>
       <div>
         <h4>
           Popular Products

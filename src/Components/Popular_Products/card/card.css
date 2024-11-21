@@ -44,3 +44,31 @@
 .card-main{
   justify-content: center;
 }
+/* .hide_box{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  bottom: 70%;
+  opacity: -1;
+} */
+ .hide_box{
+
+   position: relative;
+   display: flex;
+   justify-content: center;
+   bottom: 70%;
+   position-area: bottom;
+  opacity: -1;
+
+  }
+
+.card_outer:hover .hide_box{
+  opacity: 1;
+}
+.bg-icon{
+  background-color: #f8f9fae0;
+  padding: 3px;
+  border-radius: 5px;
+  margin: 2px;
+  cursor: pointer;
+}

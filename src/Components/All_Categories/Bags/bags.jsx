@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from '../../Popular_Products/card/Card'
-import { Faction } from '../../../assets/DATA/FactionData'
 import FactionFirst from '../Faction_cate/factionFirst'
+import { Bag_data } from '../../../assets/DATA/Bags_data'
 function Bags() {
     
     return (
@@ -12,7 +12,7 @@ function Bags() {
         </div>
         <div className="col-10 newdata_one">
           {
-            Faction.data.map((item, id) => {
+            Bag_data.data.map((item, id) => {
               return (
                 <Card key={id + 4} item={item}>{item.pname} </Card>
               )

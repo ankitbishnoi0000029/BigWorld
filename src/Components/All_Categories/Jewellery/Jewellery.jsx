@@ -1,8 +1,7 @@
 import React from 'react'
 import FactionFirst from '../Faction_cate/factionFirst'
-import { Faction } from '../../../assets/DATA/FactionData'
 import Card from '../../Popular_Products/card/Card'
-
+import { Jel } from '../../../assets/DATA/Jewellery'
 
 function Jewellery() {
     
@@ -14,7 +13,7 @@ function Jewellery() {
         </div>
         <div className="col-10 newdata_one">
           {
-            Faction.data.map((item, id) => {
+            Jel.data.map((item, id) => {
               return (
                 <Card key={id + 4} item={item}>{item.pname} </Card>
               )

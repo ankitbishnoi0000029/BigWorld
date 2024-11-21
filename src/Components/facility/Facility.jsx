@@ -1,6 +1,6 @@
 import React from 'react'
 import './facility.css'
-function Facility() {
+function Facility(props) {
     return (
         <div className='box_Faci d-flex'>
             <div>
@@ -8,7 +8,7 @@ function Facility() {
 
             </div>
             <div className='text_two'>
-                <nav>Best prices & offers</nav>
+                <nav> {props.name}   </nav>
                 <nav>Orders $50 or more</nav>
             </div>
         </div>
