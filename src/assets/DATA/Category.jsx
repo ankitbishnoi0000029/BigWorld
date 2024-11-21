@@ -1,23 +1,17 @@
 export const Category = {
     faction:[ {
       name: "Faction",
-<<<<<<< HEAD
       img : './src/assets/Feature/Faction.png',
-=======
-      img : 'Feature/Faction.png',
->>>>>>> 83fa63a03167ceb6421cc8f87cd934d4f866c374
+      img : 'Feature/fs1.png',
       bg : "#cc7ad6"
     },
     {
       name: "Electronocs",
-<<<<<<< HEAD
       img : './src/assets/Feature/fs2.png',
-=======
       img : 'Feature/fs2.png',
->>>>>>> 83fa63a03167ceb6421cc8f87cd934d4f866c374
       bg : "#f0710a"
     },
-    {
+      {
       name: "Bags",
       img : 'Feature/fs3.png',
       bg : "#96cf9d"
