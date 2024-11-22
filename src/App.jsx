@@ -18,6 +18,9 @@ import Groceries from './Components/All_Categories/Grocery/Grocery'
 import Jewellery from './Components/All_Categories/Jewellery/Jewellery'
 import Shop from './Components/All_Categories/shop/Shops'
 import Wellness from './Components/All_Categories/Wellness/Wellness'
+import Product_Detail from './Components/Product_Detail/Product_Detail'
+// import Ads from './Components/Ads/Ads'
+
 function App() {
 
 
@@ -31,7 +34,9 @@ function App() {
         <Slider_box></Slider_box>
       <Feature></Feature>
       <Products></Products>
-      <FeaturedContnaier></FeaturedContnaier>
+      
+      <FeaturedContnaier></FeaturedContnaier> 
+      {/* <Ads></Ads> */}
       <Login></Login>
       </>
       } />
@@ -45,6 +50,7 @@ function App() {
     <Route path="/Beauty" element={<Beauty/>}/>
     <Route path="/Shop" element={<Shop/>}/>
     <Route path="/Wellness" element={<Wellness/>}/>
+    <Route path="/product/:id" element={<Product_Detail/>}/>
     </Routes>
     <FacilitySection></FacilitySection>
       <FooterSection></FooterSection>

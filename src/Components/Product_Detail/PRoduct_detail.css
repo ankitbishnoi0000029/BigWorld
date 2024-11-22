@@ -1,0 +1,108 @@
+.img_box_big {
+    display: flex;
+    justify-content: center;
+}
+.heading_product_detail h3 {
+    font-size: x-large;
+    font-weight: 800;
+}
+.product_star {
+    font-size: medium;
+    color: rgba(26, 26, 26, 0.511);
+}
+.product_brand {
+    font-size: larger;
+    font-weight: 500;
+}
+
+.product_brand strong {
+    font-size: larger;
+}
+.product_price {
+    font-size: larger;
+    font-weight: 900;
+}
+.product_price span {
+    font-size: small;
+}
+.product_dec {
+    font-size: small;
+    font-weight: 500;
+}
+.btn-success {
+    color: #fff;
+    background-color: #ea440c;
+    border-color: none;
+    border: none;
+    padding: 20px 80px;
+    border-radius: 10px;
+    border-color: #0d6efd;
+    color: #fff;
+    border-color: none;
+    border: none;
+    padding: 20px 80px;
+    border-radius: 10px;
+    font-family: cursive;
+    font-weight: bolder;
+    margin-left: 10px;
+}
+.btn-primary {
+    color: #fff;
+   
+    border-color: #0d6efd;
+    color: #fff;
+    background-color: #090403;
+    border-color: none;
+    border: none;
+    padding: 20px 80px;
+    border-radius: 10px;
+    font-family: cursive;
+    font-weight: bolder;
+    margin-left: 10px;
+}
+.fs{
+    font-family: sans-serif;
+}
+body{
+    font-family: fantasy;
+}
+.product_size_box {
+    padding: 10px;
+    background: rgb(241, 243, 242);
+    border-radius: 3px;
+    margin: 0px 12px;
+    border: 1px solid lightblue;
+    box-shadow: 0px 4px 10px 1px lightblue;
+    font-weight: 900;
+}
+.product_size_box:hover{
+    cursor: pointer;
+   border: 1px solid rgb(55, 55, 220);
+   background-color: #0d6efd;
+}
+
+    .hd12b {
+        font-size: larger;
+        font-weight: 800;
+    }
+    
+    .red{
+        padding: 15px 23px;
+    border: 1px solid;
+    margin: 12px;
+    border: none;
+    border-radius: 25px;
+    background: red;
+
+    }
+    a{
+        color: #090403;
+        text-decoration: none;
+    }
+    a:hover{
+        color: #090403;
+    }
+    .red:hover{
+        /* border: 1px solid #090403; */
+        box-shadow: 0px 0px 5px 0px black;
+    }
