@@ -6,15 +6,15 @@
    background-color: rgba(215, 197, 244, 0.348);
   border-radius: 10px 10px 0px 0px;
   overflow: hidden;
-
+  object-fit: contain;
 
   }
   
 .card-img img {
   width: 100%;
-  height: 100%;
+  height: 154%;
   vertical-align: text-bottom;
-  object-fit: fill;
+  object-fit: cover;
   border-radius: 10px 10px 0px 0px;
   transition: all .3s ease;
   }

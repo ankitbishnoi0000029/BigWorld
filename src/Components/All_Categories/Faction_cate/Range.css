@@ -1,0 +1,64 @@
+.range{
+
+}
+input[type="range" i] {
+    appearance: auto;
+    cursor: default;
+    color: rgb(157, 150, 142);
+    padding: initial;
+    border: initial;
+    margin: 2px;
+}
+input[type="range"] {
+    -webkit-appearance: none; /* Remove default styling */
+    width: 100%; /* Full width */
+    height: 8px; /* Height of the track */
+    background: #ddd; /* Track background color */
+    border-radius: 5px;
+    outline: none; /* Remove outline */
+  }
+  
+  input[type="range"]::-webkit-slider-runnable-track {
+    height: 8px;
+    border-radius: 5px;
+    background: #ddd; /* Track background color */
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove default thumb styling */
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #f97a03; /* Thumb color */
+    cursor: pointer;
+  }
+  
+  input[type="range"]:focus {
+    outline: none; /* Remove focus outline */
+  }
+  
+  input[type="range"]:hover::-webkit-slider-thumb {
+    background: #45a049; /* Thumb color on hover */
+  }
+  
+  input[type="range"]:active::-webkit-slider-thumb {
+    background: #388e3c; /* Thumb color when active */
+  }
+  
+  /* Firefox-specific styles */
+  input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 8px;
+    background: #ddd; /* Track background for Firefox */
+    border-radius: 5px;
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #4CAF50; /* Thumb color for Firefox */
+    border: 2px solid #333;
+    cursor: pointer;
+  }
+  
