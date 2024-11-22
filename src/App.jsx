@@ -18,6 +18,7 @@ import Groceries from './Components/All_Categories/Grocery/Grocery'
 import Jewellery from './Components/All_Categories/Jewellery/Jewellery'
 import Shop from './Components/All_Categories/shop/Shops'
 import Wellness from './Components/All_Categories/Wellness/Wellness'
+import Product_Detail from './Components/Product_Detail/Product_Detail'
 function App() {
 
 
@@ -45,6 +46,7 @@ function App() {
     <Route path="/Beauty" element={<Beauty/>}/>
     <Route path="/Shop" element={<Shop/>}/>
     <Route path="/Wellness" element={<Wellness/>}/>
+    <Route path="/Faction/product" element={<Product_Detail/>}/>
     </Routes>
     <FacilitySection></FacilitySection>
       <FooterSection></FooterSection>

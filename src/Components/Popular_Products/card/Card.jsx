@@ -3,6 +3,7 @@ import starfill from '/Star/starfill.svg'
 import './card.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartArrowDown, faHeart } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 const renderStars = (rating) => {
   const stars = [];
   const fullStar = '/Star/starfill.svg'; // Full star image path
@@ -36,7 +37,7 @@ function Card({ item }) {
           {item.pname}
         </nav>
         <nav className='d-flex'>
-        <p className='d-flex align-items-center' >{renderStars(item.star)}</p>
+          <p className='d-flex align-items-center' >{renderStars(item.star)}</p>
         </nav>
         <nav>
           Brand: {item.brand}
@@ -45,10 +46,11 @@ function Card({ item }) {
           {/* Display dynamic price */}
           Price: <strong>{item.price} /-</strong>  {/* Assuming `item.price` exists */}
         </nav>
+        <Link to="/Faction/product" >product  </Link>
       </div>
       <nav className='hide_box'>
-      <FontAwesomeIcon className='bg-icon' icon={faHeart} style={{color: "#ea430b",}} size='lg' />
-      <FontAwesomeIcon className='bg-icon'  icon={faCartArrowDown} style={{color: "#ed6307",}}  size='lg' />
+        <FontAwesomeIcon className='bg-icon' icon={faHeart} style={{ color: "#ea430b", }} size='lg' />
+        <FontAwesomeIcon className='bg-icon' icon={faCartArrowDown} style={{ color: "#ed6307", }} size='lg' />
       </nav>
     </div>
   );
