@@ -24,6 +24,7 @@
     width: 248px;
     margin-bottom: 12px;
     transition: all ease-in-out 0.3s;
+    display: grid;
   }
   
   .card_outer:hover .card-img img {

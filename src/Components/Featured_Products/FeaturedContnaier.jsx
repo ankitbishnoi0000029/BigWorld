@@ -82,11 +82,11 @@ function FeaturedContnaier() {
     <div className="container py-3">
       <h3>Featured Products</h3>
       <div className='d-flex feature_container'>
-      <div className="slider-container col-10">
+      <div className="slider-container col-10  postioin-relative">
         <Slider className='p-0 m-0' {...MySlider}>
           {
             FPdata.data.map((item, id) => (
-              <div key={id} className="slider-item">
+              <div key={id} className="slider-item postioin-relative">
                 <Card item={item} />
               </div>
             ))

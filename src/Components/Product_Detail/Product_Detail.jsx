@@ -2,7 +2,10 @@ import f1 from '/Mens/f1.png'
 import './PRoduct_detail.css'
 import FeaturedContnaier from '../Featured_Products/FeaturedContnaier'
 
-function Product_Detail(){
+function Product_Detail({item}){
+console.log(item);
+
+
   return (
     <div className='container fs'>
       <div className='row py-4'> 
@@ -26,11 +29,7 @@ function Product_Detail(){
             </p>
           </div>
           <div className='product_brand py-2'>
-            <span className='hd12b'>Brand :</span> <strong>Apple</strong>
-          </div>
-          <div className='product_price py-2 d-flex'>
-          <span className='hd12b' >Colors :</span>
-              <nav>6000/-</nav> <nav className='px-4 text-primary fs-5'> 50% off <strong className='text-danger fs-6'>7000/-</strong> </nav>
+            <span className='hd12b'>Brand :</span> <span>Apple</span>
           </div>
           <div className='product_size py-3'>
             <nav>
@@ -40,6 +39,10 @@ function Product_Detail(){
               <nav className='product_color py-3'>
                 <span className='hd12b' >Colors :</span> <span className='red' ></span> <span className='red bg-success' ></span> <span className='red bg-info' ></span> <span className='red bg-dark' ></span>
               </nav>
+            </div>
+            <div className='product_size'>
+              <nav className='product_color '>
+                <span className='hd12b' >Price : </span> <span className='price' > 7000/-</span> <span className='px-2'>50%</span><span className='discount'>14000/-</span>               </nav>
             </div>
           </div>
 

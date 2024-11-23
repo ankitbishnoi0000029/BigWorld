@@ -4,7 +4,6 @@ import { Category } from '../../../assets/DATA/Category'
 import Range from './Range';
 import { NavLink } from 'react-router-dom';
 function FactionFirst() {
-    console.log(Category.faction);
     
     return (
         <div className='cate_outer'>
@@ -27,5 +26,4 @@ function FactionFirst() {
         </div>
     )
 }
-
 export default FactionFirst
