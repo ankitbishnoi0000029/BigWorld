@@ -1,6 +1,7 @@
 export const Faction = {
     data: [
         {
+            id: "F001", // Unique 3-digit ID
             tag: "Faction",
             pname: "Jobayed Hossain...",
             star: 5,
@@ -10,6 +11,7 @@ export const Faction = {
             price: 1170
         },
         {
+            id: "F002", // Unique 3-digit ID
             tag: "Faction",
             pname: "Shahina Begum",
             star: 4,
@@ -19,6 +21,7 @@ export const Faction = {
             price: 1299
         },
         {
+            id: "F003", // Unique 3-digit ID
             tag: "Faction",
             pname: "Rashid Alvi",
             star: 4,
@@ -28,6 +31,7 @@ export const Faction = {
             price: 1150
         },
         {
+            id: "F004", // Unique 3-digit ID
             tag: "Faction",
             pname: "Moyeen Khan",
             star: 3,
@@ -37,6 +41,7 @@ export const Faction = {
             price: 1099
         },
         {
+            id: "F005", // Unique 3-digit ID
             tag: "Faction",
             pname: "Sara Hasan",
             star: 5,
@@ -46,6 +51,7 @@ export const Faction = {
             price: 1390
         },
         {
+            id: "F006", // Unique 3-digit ID
             tag: "Faction",
             pname: "Mariam Jabeen",
             star: 4,
@@ -55,6 +61,7 @@ export const Faction = {
             price: 999
         },
         {
+            id: "F007", // Unique 3-digit ID
             tag: "Faction",
             pname: "Tariq Siddiqui",
             star: 5,
@@ -64,6 +71,7 @@ export const Faction = {
             price: 1440
         },
         {
+            id: "F008", // Unique 3-digit ID
             tag: "Faction",
             pname: "Hassan Ali",
             star: 3,
@@ -73,6 +81,7 @@ export const Faction = {
             price: 1250
         },
         {
+            id: "F009", // Unique 3-digit ID
             tag: "Faction",
             pname: "Zara Khan",
             star: 4,
@@ -82,6 +91,7 @@ export const Faction = {
             price: 1330
         },
         {
+            id: "F010", // Unique 3-digit ID
             tag: "Faction",
             pname: "Fayez Ahmed",
             star: 5,
@@ -91,6 +101,7 @@ export const Faction = {
             price: 1450
         },
         {
+            id: "F011", // Unique 3-digit ID
             tag: "Faction",
             pname: "Nusrat Rahman",
             star: 4,
@@ -100,6 +111,7 @@ export const Faction = {
             price: 1220
         },
         {
+            id: "F012", // Unique 3-digit ID
             tag: "Faction",
             pname: "Khaled Shah",
             star: 4,
@@ -109,6 +121,7 @@ export const Faction = {
             price: 1300
         },
         {
+            id: "F013", // Unique 3-digit ID
             tag: "Faction",
             pname: "Riya Chowdhury",
             star: 5,
@@ -118,6 +131,7 @@ export const Faction = {
             price: 1499
         },
         {
+            id: "F014", // Unique 3-digit ID
             tag: "Faction",
             pname: "Fahad Mustafa",
             star: 3,
@@ -127,6 +141,7 @@ export const Faction = {
             price: 1120
         },
         {
+            id: "F015", // Unique 3-digit ID
             tag: "Faction",
             pname: "Zainab Tariq",
             star: 5,
@@ -136,6 +151,7 @@ export const Faction = {
             price: 1580
         },
         {
+            id: "F016", // Unique 3-digit ID
             tag: "Faction",
             pname: "Ali Rahman",
             star: 4,

@@ -1,5 +1,4 @@
 import React from 'react'
-import starfill from '/Star/starfill.svg'
 import './card.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartArrowDown, faHeart } from '@fortawesome/free-solid-svg-icons';
@@ -9,7 +8,6 @@ const renderStars = (rating) => {
   const fullStar = '/Star/starfill.svg'; // Full star image path
   const halfStar = '/Star/starh.svg'; // Half star image path
   const emptyStar = '/Star/stare.svg'; // Empty star image path
-
   // Logic to display the correct number of stars
   for (let i = 0; i < 5; i++) {
     if (i < Math.floor(rating)) {
@@ -22,11 +20,11 @@ const renderStars = (rating) => {
   }
   return stars;
 };
-function Card({ item }) {
+function Card({ item }) {  
   return (
-    <div className='card_outer p-0 col-lg-2 col-md-2 col-sm-6 mx-2 '>
-      <div className='card-img ' >        {/* Display image dynamically */}
-
+    <div className='card_outer p-0 col-lg-2 col-md-2 col-sm-6 mx-2' >
+      <Link to={{ pathname: `/product/${item.id}`, state: { item } }}>
+      <div className='card-img ' >       
         <img key={item.id} src={item.img} alt={item.pname} />
       </div>
       <div className='card-body p-3'>
@@ -52,6 +50,7 @@ function Card({ item }) {
         <FontAwesomeIcon className='bg-icon' icon={faHeart} style={{ color: "#ea430b", }} size='lg' />
         <FontAwesomeIcon className='bg-icon' icon={faCartArrowDown} style={{ color: "#ed6307", }} size='lg' />
       </nav>
+    </Link>
     </div>
   );
 }
