@@ -44,6 +44,7 @@ function Card({ item }) {
           {/* Display dynamic price */}
           Price: <strong>{item.price} /-</strong>  {/* Assuming `item.price` exists */}
         </nav>
+        <Link to="/Faction/product" >product  </Link>
       </div>
       <nav className='hide_box'>
         <FontAwesomeIcon className='bg-icon' icon={faHeart} style={{ color: "#ea430b", }} size='lg' />
