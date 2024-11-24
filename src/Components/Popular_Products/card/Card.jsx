@@ -23,7 +23,7 @@ const renderStars = (rating) => {
 function Card({ item }) {  
   return (
     <div className='card_outer p-0 col-lg-2 col-md-2 col-sm-6 mx-2' >
-      <Link to={{ pathname: `/product/${item.id}`, state: { item } }}>
+    <Link to={`/product/${item.id}`} state={{ item }}>
       <div className='card-img ' >       
         <img key={item.id} src={item.img} alt={item.pname} />
       </div>

@@ -1,10 +1,11 @@
 import React from 'react'
 import FactionFirst from '../Faction_cate/factionFirst'
-import { Beauty_data } from '../../../assets/DATA/Beauty'
+import  {Beauty_data}  from '../../../assets/DATA/Beauty'
 import Card from '../../Popular_Products/card/Card'
 
 function Beauty() {
-    
+      const filteredData = Beauty_data.data.filter(item => item.price >= 5000);
+console.log(filteredData);
     return (
         <div className='container py-3'>
             <div className="row">

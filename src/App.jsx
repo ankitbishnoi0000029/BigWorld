@@ -19,11 +19,9 @@ import Jewellery from './Components/All_Categories/Jewellery/Jewellery'
 import Shop from './Components/All_Categories/shop/Shops'
 import Wellness from './Components/All_Categories/Wellness/Wellness'
 import Product_Detail from './Components/Product_Detail/Product_Detail'
-// import Ads from './Components/Ads/Ads'
+import AdsSection from './Components/Ads/Adsection'
 
 function App() {
-
-
   return (
     <>
     <BrowserRouter>
@@ -36,7 +34,7 @@ function App() {
       <Products></Products>
       
       <FeaturedContnaier></FeaturedContnaier> 
-      {/* <Ads></Ads> */}
+    <AdsSection></AdsSection>
       <Login></Login>
       </>
       } />

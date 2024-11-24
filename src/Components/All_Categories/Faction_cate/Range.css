@@ -1,6 +1,4 @@
-.range{
 
-}
 input[type="range" i] {
     appearance: auto;
     cursor: default;
@@ -61,4 +59,40 @@ input[type="range"] {
     border: 2px solid #333;
     cursor: pointer;
   }
-  
+  .css-1hskriy{
+    width: max-content;
+  }
+  .css-1hskriy {
+    width: -webkit-fill-available;
+    color: black;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+.css-13vpke-MuiSlider-root {
+  border-radius: 7px;
+  box-sizing: content-box;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  touch-action: none;
+  -webkit-tap-highlight-color: transparent;
+  color: #bf2a09;
+  height: 10px;
+  width: 100%;
+  padding: 13px 0;
+}
+.min-max {
+  font-size: smaller;
+  position: relative;
+  left: 0%;
+}
+.range_box{
+  width: 100%;
+}
+
+.right-max{
+  position: relative;
+  left: 38%;
+  font-size: smaller;
+}
+
