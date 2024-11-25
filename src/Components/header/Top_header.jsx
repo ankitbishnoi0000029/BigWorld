@@ -62,7 +62,10 @@ function Top_header() {
             </div>
             <div className='my-wish'>
                 {Icon.cart}
-                <nav className='coman'>cart</nav>
+                <nav className='coman'>
+                <NavLink activeClassName="active" className='header_links' to="/Cart">Cart</NavLink>
+
+                </nav>
             </div>
             <div className='my-wish'>
                 {Icon.singin}

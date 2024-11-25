@@ -17,12 +17,12 @@ function FactionFirst() {
                             <div className="all-cate-data">
                             <span className='cate_heading mx-3 fs-5 fw-bold'>Category</span>
                             <Link to="Faction" ><nav > <HailRoundedIcon /> Faction </nav></Link>
-                            <Link  to="electronic"><nav > <CameraRearOutlinedIcon color='red' /> Electronics </nav></Link>
-                            <NavLink to="Bags"><nav > <BusinessCenterOutlinedIcon/> Bags </nav></NavLink>
-                            <NavLink to="Footware"><nav > <RollerSkatingOutlinedIcon />Footwar </nav></NavLink>
-                            <NavLink to="Groceries"><nav > <FactCheckRoundedIcon/> Groceries </nav></NavLink>
-                            <NavLink to="beauty"><nav > <GirlOutlinedIcon/> beauty </nav></NavLink>
-                            <NavLink  to="Jewellery"><nav > <DiamondRoundedIcon/> Jewellery </nav></NavLink>
+                            <Link  to="/electronic"><nav > <CameraRearOutlinedIcon color='red' /> Electronics </nav></Link>
+                            <NavLink to="/Bags"><nav > <BusinessCenterOutlinedIcon/> Bags </nav></NavLink>
+                            <NavLink to="/Footware"><nav > <RollerSkatingOutlinedIcon />Footwar </nav></NavLink>
+                            <NavLink to="/Groceries"><nav > <FactCheckRoundedIcon/> Groceries </nav></NavLink>
+                            <NavLink to="/beauty"><nav > <GirlOutlinedIcon/> beauty </nav></NavLink>
+                            <NavLink  to="/Jewellery"><nav > <DiamondRoundedIcon/> Jewellery </nav></NavLink>
                             </div>
                         </div>
                         <Range></Range>
