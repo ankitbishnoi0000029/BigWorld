@@ -1,4 +1,4 @@
-import f1 from '/Mens/f1.png'
+// import f1 from '/Mens/f1.png'
 import './PRoduct_detail.css'
 import FeaturedContnaier from '../Featured_Products/FeaturedContnaier'
 import { useLocation } from 'react-router-dom';
@@ -7,7 +7,7 @@ function Product_Detail() {
   // Access the location object to get the passed state
   const location = useLocation();
   const { item } = location.state || {}; // Destructure `item` from state (if exists)
-
+  
   if (!item) {
     return <div>Product not found.</div>; // Handling if no item is passed (edge case)
   }
@@ -58,10 +58,10 @@ function Product_Detail() {
 
         <div className='col-5'>
           <div className='p-4 d-flex justify-content-center'>
-            <img className='mx-3' height={60} width={60} src={f1} alt="" />
-            <img className='mx-3' height={60} width={60} src={f1} alt="" />
-            <img className='mx-3' height={60} width={60} src={f1} alt="" />
-            <img className='mx-3' height={60} width={60} src={f1} alt="" />
+            <img className='mx-3' height={60} width={60} src={item.img} alt="" />
+            <img className='mx-3' height={60} width={60} src={item.img} alt="" />
+            <img className='mx-3' height={60} width={60} src={item.img} alt="" />
+            <img className='mx-3' height={60} width={60} src={item.img} alt="" />
           </div>
         </div>
         <div className='col-7 align-items-center d-flex justify-content-start' >
