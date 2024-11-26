@@ -22,7 +22,7 @@
 .rate {
     font-weight: bold;
     padding-right: 12px;
-    color: blue;
+    color: rgb(19, 130, 248);
 }
 .add, .min{
     width: 28px;

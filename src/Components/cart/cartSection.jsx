@@ -8,12 +8,6 @@ function CartSection() {
       <div className="row">
         <div className='col-8 dmasi'>
           <Cart></Cart>
-          <Cart></Cart>
-          <Cart></Cart>
-          <Cart></Cart>
-          <Cart></Cart>
-          <Cart></Cart>
-          <Cart></Cart>
           <div className='m23mdi'>
             <button className='nd23-23'>
                  PLACE ORDER

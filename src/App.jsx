@@ -33,8 +33,8 @@ function App() {
       <Feature></Feature>
       <Products></Products>
       
-      <FeaturedContnaier></FeaturedContnaier> 
     <AdsSection></AdsSection>
+      <FeaturedContnaier></FeaturedContnaier> 
       <Login></Login>
       </>
       } />
