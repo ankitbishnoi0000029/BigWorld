@@ -1,6 +1,21 @@
-import React from 'react'
+import { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 
 function Price() {
+    const cartItems = useSelector((state) => state.cart.cartItems)
+    const [newprice,setNewprice] = useState()
+     const data = cartItems.map((item) => (
+        item.price * item.quantity
+    ))
+   
+    const sum = data.reduce((accumulator, currentValue) => {
+        return accumulator + currentValue;
+      }, 0);
+      useEffect(()=>{
+setNewprice(sum)
+      },[data])
+      
+    
     return (
         <div className='price_box'>
             <div>
@@ -9,10 +24,10 @@ function Price() {
                 </div>
                 <div className='mqie-324'>
                     <nav className='pd-12'>
-                        Price (3 items)
+                        Price ({cartItems.length} items)
                     </nav>
                     <nav>
-                        ₹35,999
+                        {newprice}
                     </nav>
                 </div>
                 <div className='mqie-324'>

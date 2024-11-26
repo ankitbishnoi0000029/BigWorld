@@ -3,9 +3,16 @@ import logo from '../../assets/logo/logo.png'
 import './top_header.css'
 import { Icon } from './Search/search'
 import { Link, NavLink } from 'react-router-dom'
+import { useSelector } from 'react-redux'
+
 function Top_header() {
     const [scroll, setScroll] = useState(false)
-
+    const cartItems = useSelector((state) => state.cart.cartItems);
+    const [len,setLenth] = useState()
+    
+    useEffect(()=>{
+        setLenth(cartItems.length)
+    },[cartItems])
     const hendleScroll = () => {
         if (window.scrollY > 0) {
             setScroll(true);
@@ -63,7 +70,7 @@ function Top_header() {
             <div className='my-wish'>
                 {Icon.cart}
                 <nav className='coman'>
-                <NavLink activeClassName="active" className='header_links' to="/Cart">Cart</NavLink>
+                <NavLink activeClassName="active" className='header_links' to="/Cart">Cart {len ? <span className='mre34-3m'>{len}</span>: ""}  </NavLink>
 
                 </nav>
             </div>

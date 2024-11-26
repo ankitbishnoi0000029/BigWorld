@@ -7,6 +7,7 @@ import f3 from '/Mens/f3.png';
 import f6 from '/Mens/f6.png';
 import { useDispatch } from 'react-redux';
 import { addtocart } from '../../Redux/Actions/Action';
+import { Button, Snackbar } from '@mui/material';
 
 function Product_Detail() {
   const location = useLocation();
@@ -15,8 +16,14 @@ function Product_Detail() {
   const [color, setColor] = useState();
   const [size, setSize] = useState();
   const dispatch = useDispatch();
-  const navigate = useNavigate(); // For navigating programmatically
-  
+  const navigate = useNavigate();
+  const [text, setText] = useState(false)
+  const time = () => {
+    setTimeout(() => {
+      setText(false)
+    }, 2000);
+  }
+
   if (!item) {
     return <div>Product not found.</div>;
   }
@@ -28,22 +35,23 @@ function Product_Detail() {
   const handelBuy = () => {
     if (color && size) {
       const productDetails = {
-        ...item,  // Take the item from the product page
-        color,    // Add selected color
-        size,     // Add selected size
+        ...item,
+        color,
+        size,
       };
-  
-      // Dispatch the action to add to cart
-      dispatch(addtocart(productDetails));  
-      console.log("Product added to cart:", productDetails); // Check if correct data is being logged
-      navigate('/Cart'); // Optionally navigate to the Cart page
+      dispatch(addtocart(productDetails));
+      time();
+      setText(true)
+      // navigate('/Cart'); 
     } else {
       alert("Please select size and color before adding to cart.");
     }
   };
+ 
 
   return (
     <div className='container fs'>
+
       <div className='row py-4'>
         <div className="col-5">
           <div className="img_box_big">
@@ -117,7 +125,7 @@ function Product_Detail() {
           </div>
           <div className='product_price py-2 d-flex text-success fs-4'>
             Price: ₹{item.price}/-
-            <nav className='px-4 text-primary fs-5'> 50% off <strong className='text-danger fs-6'>₹{item.price}/-</strong></nav>
+            <nav className='px-4 text-primary fs-5'> 10% off <strong className='text-danger text-line fs-6'>₹{item.price}/-</strong></nav>
           </div>
         </div>
         <div className='col-5'>
@@ -159,7 +167,7 @@ function Product_Detail() {
         <div className='col-7 align-items-center d-flex justify-content-start'>
           <div className='prduct_btn_section'>
             <button className="btn btn-success">Buy Now</button>
-            <button onClick={handelBuy} className="btn btn-primary">Add to cart</button>
+            <button onClick={handelBuy} className="btn btn-primary">{text ? "Added" : "Add to cart"}</button>
           </div>
         </div>
       </div>

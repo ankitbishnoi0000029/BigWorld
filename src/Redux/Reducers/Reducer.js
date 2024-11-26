@@ -1,12 +1,11 @@
 
 const initialState = {
-  cartItems: [], // List of items in the cart
+  cartItems: [],
 };
 
 const CartReducer = (state = initialState, action) => {
   switch (action.type) {
     case 'ADD_TO_CART':
-      // Check if the product already exists in the cart (based on ID, color, and size)
       const existingItem = state.cartItems.find(
         (item) =>
           item.id === action.payload.id &&
@@ -15,7 +14,6 @@ const CartReducer = (state = initialState, action) => {
       );
 
       if (existingItem) {
-        // If the item exists, increase its quantity
         return {
           ...state,
           cartItems: state.cartItems.map((item) =>
@@ -25,19 +23,34 @@ const CartReducer = (state = initialState, action) => {
           ),
         };
       } else {
-        // Otherwise, add the new product to the cart with initial quantity 1
         return {
           ...state,
           cartItems: [...state.cartItems, { ...action.payload, quantity: 1 }],
         };
       }
 
-    case 'REMOVE_FROM_CART':
-      // Handle item removal from the cart
-      return {
-        ...state,
-        cartItems: state.cartItems.filter((item) => item.id !== action.payload.id),
-      };
+      case "REMOVE_FROM_CART":
+        return {
+          ...state,
+          cartItems: state.cartItems.filter(item => item.id !== action.payload),  // Use `cartItems` here
+        };
+        case "INCREMENT_QUANTITY":
+            return {
+              ...state,
+              cartItems: state.cartItems.map(item =>
+                item.id === action.payload.id ? { ...item, quantity: item.quantity + 1 } : item
+              ),
+            };
+      
+          case "DECREMENT_QUANTITY":
+            return {
+              ...state,
+              cartItems: state.cartItems.map(item =>
+                item.id === action.payload.id && item.quantity > 1
+                  ? { ...item, quantity: item.quantity - 1 }
+                  : item
+              ),
+            };
 
     default:
       return state;

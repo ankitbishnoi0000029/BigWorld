@@ -1,14 +1,21 @@
-// Correctly export the Add action creator
-import { Add,Remove } from "./ActionType";
 export const addtocart = (product) => ({
     type: 'ADD_TO_CART',
-    payload: product,  // This is the product data
+    payload: product,
   });
   
  export const removetocart = (id) =>{
   return {
-    type : Remove,
+    type : "REMOVE_FROM_CART",
     payload : id
   }
  }
-  
+
+export const incrementQuantity = (id) => ({
+    type: "INCREMENT_QUANTITY",
+    payload: { id },
+  });
+
+  export const decrementQuantity = (id) => ({
+    type: "DECREMENT_QUANTITY",
+    payload: { id },
+  });

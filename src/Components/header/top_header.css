@@ -72,3 +72,13 @@ ul {
   a.header_links.active{
     color: #ea430b;
   }
+  .mre34-3m{
+    background-color: #0b64ea;
+    padding: 3px 7px;
+    color: white;
+    border-radius: 12px;
+    bottom: 10px;
+    position: relative;
+    font-weight: bolder;
+    
+  }

@@ -1,26 +1,20 @@
 import f1 from '/Mens/f1.png';
 import './cart.css';
-import { useSelector } from 'react-redux';
-import { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { removetocart, incrementQuantity, decrementQuantity } from '../../Redux/Actions/Action';
 
 const Cart = () => {
-    const [dis,setdis] = useState([])
+  const dispatch = useDispatch();
   const cartItems = useSelector((state) => state.cart.cartItems || []);
-console.log(cartItems[0].price);
-
   const decrement = (id) => {
-    console.log(`Decrement item with id: ${id}`);
+    dispatch(decrementQuantity(id));  
   };
-
   const increment = (id) => {
-    console.log(`Increment item with id: ${id}`);
+    dispatch(incrementQuantity(id));
   };
 
-  const handleRemove = (id) => {
-    console.log(`Remove item with id: ${id}`);
-  };
-const discount = 1000-(1000*(10/100));
-console.log(discount);
+  const dic = 1000-(1000*(10/100))
+console.log(dic);
 
   return (
     <div>
@@ -28,7 +22,7 @@ console.log(discount);
         <p>Your cart is empty.</p>
       ) : (
         cartItems?.map((item) => (
-          <div className="d-flex cart_box">
+          <div key={item.id} className="d-flex cart_box">
             <div className="cart_image">
               <img height={150} width={100} src={item.img || f1} alt={item.pname} />
             </div>
@@ -46,9 +40,10 @@ console.log(discount);
               </nav>
               <nav>
                 <span className="price_text">Price: </span>
-                <span className="rate">₹ {item.price * item.quantity}/-</span>
-                <span className="rate-des">₹ {item.discount}% off</span>
-                <span className="or-rate">₹ {item.originalPrice}/-</span>
+                <span className="rate">₹{`${(item.price - (item.price * (10 / 100))) * item.quantity}`}
+                /-</span>
+                <span className="rate-des">₹ 10% off</span>
+                <span className="or-rate">₹ {item.price}/-</span>
               </nav>
               <nav className="last_box_cart">
                 <div>
@@ -77,7 +72,7 @@ console.log(discount);
                 </div>
                 <div>
                   <button
-                    onClick={() => handleRemove(item.id)}
+                    onClick={() => dispatch(removetocart(item.id))}
                     className="remove"
                   >
                     Remove

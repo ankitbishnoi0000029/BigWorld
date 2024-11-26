@@ -58,8 +58,8 @@ function FeaturedContnaier() {
     speed: 500,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-    slidesToShow: 4, // How many cards to show at once
-    slidesToScroll: 3, // How many cards to scroll at a time
+    slidesToShow: 4, 
+    slidesToScroll: 3, 
     responsive: [
       {
         breakpoint: 1024,
