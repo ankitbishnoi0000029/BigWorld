@@ -1,0 +1,135 @@
+.price_text {
+    font-size: larger;
+    font-weight: 600;
+    font-variant-caps: petite-caps;
+}
+.cart_image {
+    padding: 0px 24px 0px 0px;
+}
+.cart_boxs {
+    padding-top: 24px;
+}
+.or-rate {
+    font-size: x-small;
+    padding-left: 12px;
+    text-decoration: line-through;
+    color: red;
+}
+.rate-des {
+    font-size: small;
+    color: green;
+}
+.rate {
+    font-weight: bold;
+    padding-right: 12px;
+    color: rgb(19, 130, 248);
+}
+.add, .min{
+    width: 28px;
+    height: 28px;
+    background: linear-gradient(#fff, #f9f9f9);
+    display: inline-block;
+    border: 1px solid #c2c2c250;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 50%;
+    padding-top: 1px;
+    line-height: 1;
+}
+
+.cart_num{
+    display: inline-block;
+    padding: 3px 6px;
+    width: calc(100% - 60px);
+    height: 100%;
+    width: 46px;
+    height: 28px;
+    border-radius: 2px;
+    background-color: #fff;
+    border: 1px solid #c2c2c250;
+    margin: 0 5px;
+}
+
+.cart_box{
+    padding: 24px 0px;
+    border-bottom: 1px solid #c2c2c250;
+}
+.last_box_cart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+.remove{
+    border: none;
+    padding: 6px 20px;
+    border-radius: 22px;
+    background: darkred;
+    color: white;
+}
+.mqie-324 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0px;
+}
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    color:rgba(0, 0, 0, 0.525);
+    border-bottom: 1px solid #c2c2c250;
+}
+.pd-12{
+    font-weight: bold;
+}
+.box-ewmd{
+    border-bottom: 1px solid #c2c2c250;
+    border-top: 1px solid #c2c2c250;
+}
+.total-23e {
+    font-size: larger;
+}
+.price_box {
+    border: 1px solid #c2c2c250;
+    padding: 24px;
+    position: sticky;
+    top: 76px;
+}
+.daew34 {
+    font-weight: 500;
+    font-size: larger;
+    color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pd-12 h3{
+    font-size: 25px;
+    font-weight: 700;
+}
+.dmasi{
+    border:1px solid #c2c2c250;
+}
+.nd23-23 {
+    padding: 11px 52px;
+    border: none;
+    background: #ea430b;
+    color: white;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+.m23mdi {
+    padding: 12px;
+    display: flex;
+    justify-content: end;
+    position: sticky;
+    bottom: 12px;
+}
+.nd23-23:active{
+    background-color: rgb(5, 5, 9);
+}
+.nd23-23:hover{
+    background-color: rgba(0, 0, 255, 0.736);
+}

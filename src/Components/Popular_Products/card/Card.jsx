@@ -52,6 +52,7 @@ function Card({ item }) {
       </nav>
     </Link>
     </div>
+    
   );
 }
 export default Card

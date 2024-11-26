@@ -34,7 +34,7 @@ function Slider_box() {
         <img src={s4} />
         </div>
         <div>
-        <img src={s5} />
+        <img src={s3} />
         </div>
       </Slider>
     </div>

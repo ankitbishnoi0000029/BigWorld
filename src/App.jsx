@@ -20,7 +20,7 @@ import Shop from './Components/All_Categories/shop/Shops'
 import Wellness from './Components/All_Categories/Wellness/Wellness'
 import Product_Detail from './Components/Product_Detail/Product_Detail'
 import AdsSection from './Components/Ads/Adsection'
-
+import CartSection from './Components/cart/cartSection'
 function App() {
   return (
     <>
@@ -33,8 +33,8 @@ function App() {
       <Feature></Feature>
       <Products></Products>
       
-      <FeaturedContnaier></FeaturedContnaier> 
     <AdsSection></AdsSection>
+      <FeaturedContnaier></FeaturedContnaier> 
       <Login></Login>
       </>
       } />
@@ -50,6 +50,7 @@ function App() {
     <Route path="/Wellness" element={<Wellness/>}/>
     <Route path="/product/:id" element={<Product_Detail/>}/>
     <Route path="/Faction/product" element={<Product_Detail/>}/>
+    <Route path="/Cart" element={<CartSection/>}/>
     </Routes>
     <FacilitySection></FacilitySection>
       <FooterSection></FooterSection>

@@ -1,7 +1,7 @@
 import React from 'react'
 import './Faction.css'
 import Range from './Range';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import CameraRearOutlinedIcon from '@mui/icons-material/CameraRearOutlined';
 import BusinessCenterOutlinedIcon from '@mui/icons-material/BusinessCenterOutlined';
 import RollerSkatingOutlinedIcon from '@mui/icons-material/RollerSkatingOutlined';
@@ -16,13 +16,13 @@ function FactionFirst() {
                         <div>
                             <div className="all-cate-data">
                             <span className='cate_heading mx-3 fs-5 fw-bold'>Category</span>
-                            <NavLink to="Faction" ><nav > <HailRoundedIcon /> Faction </nav></NavLink>
-                            <NavLink  to="electronic"><nav > <CameraRearOutlinedIcon color='red' /> Electronics </nav></NavLink>
-                            <NavLink to="Bags"><nav > <BusinessCenterOutlinedIcon/> Bags </nav></NavLink>
-                            <NavLink to="Footware"><nav > <RollerSkatingOutlinedIcon />Footwar </nav></NavLink>
-                            <NavLink to="Groceries"><nav > <FactCheckRoundedIcon/> Groceries </nav></NavLink>
-                            <NavLink to="beauty"><nav > <GirlOutlinedIcon/> beauty </nav></NavLink>
-                            <NavLink  to="Jewellery"><nav > <DiamondRoundedIcon/> Jewellery </nav></NavLink>
+                            <Link to="/Faction" ><nav > <HailRoundedIcon /> Faction </nav></Link>
+                            <Link  to="/electronic"><nav > <CameraRearOutlinedIcon color='red' /> Electronics </nav></Link>
+                            <NavLink to="/Bags"><nav > <BusinessCenterOutlinedIcon/> Bags </nav></NavLink>
+                            <NavLink to="/Footware"><nav > <RollerSkatingOutlinedIcon />Footwar </nav></NavLink>
+                            <NavLink to="/Groceries"><nav > <FactCheckRoundedIcon/> Groceries </nav></NavLink>
+                            <NavLink to="/beauty"><nav > <GirlOutlinedIcon/> beauty </nav></NavLink>
+                            <NavLink  to="/Jewellery"><nav > <DiamondRoundedIcon/> Jewellery </nav></NavLink>
                             </div>
                         </div>
                         <Range></Range>
