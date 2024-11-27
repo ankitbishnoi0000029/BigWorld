@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 function Price() {
     const cartItems = useSelector((state) => state.cart.cartItems)
     const [newprice,setNewprice] = useState()
+    const [dicprice,setDicprice] = useState()
      const data = cartItems.map((item) => (
         item.price * item.quantity
     ))
@@ -13,9 +14,11 @@ function Price() {
       }, 0);
       useEffect(()=>{
 setNewprice(sum)
+setDicprice(dis)
       },[data])
-      
-    
+      const dis = sum-(sum*(10/100))
+     
+     
     return (
         <div className='price_box'>
             <div>
@@ -27,7 +30,7 @@ setNewprice(sum)
                         Price ({cartItems.length} items)
                     </nav>
                     <nav>
-                        {newprice}
+                        {sum}
                     </nav>
                 </div>
                 <div className='mqie-324'>
@@ -35,7 +38,7 @@ setNewprice(sum)
                         Discount
                     </nav>
                     <nav className=' text-success'>
-                        − ₹7,001
+                        − ₹{sum-dicprice}
                     </nav>
                 </div>
                 <div className='mqie-324'>
@@ -59,11 +62,11 @@ setNewprice(sum)
                         Total Amount
                     </nav>
                     <nav className='total-23e'>
-                        ₹29,116
+                        ₹{dicprice+80+118}
                     </nav>
                 </div>
                 <div className='daew34'>
-                        You will save ₹6,883 on this order
+                        You will save ₹{sum-dicprice} on this order
                 </div>
 
             </div>
