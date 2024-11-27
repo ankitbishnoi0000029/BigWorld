@@ -12,11 +12,11 @@ function Price() {
     const sum = data.reduce((accumulator, currentValue) => {
         return accumulator + currentValue;
       }, 0);
+      const dis = sum-(sum*(10/100))
       useEffect(()=>{
 setNewprice(sum)
 setDicprice(dis)
       },[data])
-      const dis = sum-(sum*(10/100))
      
      
     return (

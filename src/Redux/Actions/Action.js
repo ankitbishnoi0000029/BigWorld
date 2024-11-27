@@ -19,3 +19,8 @@ export const incrementQuantity = (id) => ({
     type: "DECREMENT_QUANTITY",
     payload: { id },
   });
+
+  export const Range_data =(val) =>({
+    type : "range",
+    payload : val
+  });

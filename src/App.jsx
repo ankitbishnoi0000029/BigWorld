@@ -9,7 +9,6 @@ import FacilitySection from './Components/facility/FacilitySection'
 import FooterSection from './Components/Footer/FooterSection'
 import { BrowserRouter, Route } from 'react-router-dom'
 import { Routes } from 'react-router-dom'
-import Faction_section from './Components/All_Categories/Faction_cate/Faction_section'
 import Electronics from './Components/All_Categories/Electronics/Electronics'
 import Bags from './Components/All_Categories/Bags/bags'
 import Footware from './Components/All_Categories/Footware/footware'
@@ -21,6 +20,7 @@ import Wellness from './Components/All_Categories/Wellness/Wellness'
 import Product_Detail from './Components/Product_Detail/Product_Detail'
 import AdsSection from './Components/Ads/Adsection'
 import CartSection from './Components/cart/cartSection'
+import Faction_section from './Components/All_Categories/Faction_cate/Faction_section'
 function App() {
   return (
     <>
