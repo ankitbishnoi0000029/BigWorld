@@ -7,7 +7,6 @@ import f3 from '/Mens/f3.png';
 import f6 from '/Mens/f6.png';
 import { useDispatch } from 'react-redux';
 import { addtocart } from '../../Redux/Actions/Action';
-import { Button, Snackbar } from '@mui/material';
 
 function Product_Detail() {
   const location = useLocation();
@@ -124,7 +123,7 @@ function Product_Detail() {
             </nav>
           </div>
           <div className='product_price py-2 d-flex text-success fs-4'>
-            Price: ₹{item.price}/-
+            Price: ₹{`${(item.price - (item.price * (10 / 100)))}`}
             <nav className='px-4 text-primary fs-5'> 10% off <strong className='text-danger text-line fs-6'>₹{item.price}/-</strong></nav>
           </div>
         </div>
