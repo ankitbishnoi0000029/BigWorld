@@ -12,7 +12,6 @@ function Cate_feat() {
             <div key={id}>
              <div style={{ backgroundColor: `${item.bg}` }} key={id} className='box-cer d-block'>
                 <img className='cr1' height={50} src={item.img} alt={item.name} />
-                 {/* Optionally display the name of the faction */}
               </div>
               <div className='d-name p-2'>{item.name}</div>
             </div>

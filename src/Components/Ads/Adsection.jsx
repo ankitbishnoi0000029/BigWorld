@@ -10,33 +10,33 @@ function AdsSection() {
     dots: false,
     infinite: true,
     speed: 1000,
-    slidesToShow: 4,  // Display as many as available, up to 4
+    slidesToShow: 4, 
     slidesToScroll: 1,
     fade: false,
     responsive: [
       {
-        breakpoint: 1200,  // Large screens (e.g., desktops)
+        breakpoint: 1200,  
         settings: {
           slidesToShow: 4,
           slidesToScroll: 1,
         }
       },
       {
-        breakpoint: 992,   // Medium screens (e.g., tablets)
+        breakpoint: 992,  
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
         }
       },
       {
-        breakpoint: 768,   // Small screens (e.g., smartphones)
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
         }
       },
       {
-        breakpoint: 480,   // Extra small screens (e.g., very small smartphones)
+        breakpoint: 480,   
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
