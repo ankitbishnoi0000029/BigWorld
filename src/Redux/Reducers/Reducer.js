@@ -1,6 +1,7 @@
 
 const initialState = {
   cartItems: [],
+  rangeValue :false,
 };
 
 const CartReducer = (state = initialState, action) => {
@@ -51,7 +52,11 @@ const CartReducer = (state = initialState, action) => {
                   : item
               ),
             };
-
+           case "range":
+            return {
+              ...state,
+              rangeValue: action.payload,
+            };
     default:
       return state;
   }

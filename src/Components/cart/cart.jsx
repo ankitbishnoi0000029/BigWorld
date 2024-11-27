@@ -17,7 +17,7 @@ const Cart = () => {
 console.log(dic);
 
   return (
-    <div>
+    <>
       {cartItems?.length === 0 ? (
         <p>Your cart is empty.</p>
       ) : (
@@ -28,7 +28,7 @@ console.log(dic);
             </div>
             <div className="cart_product_detail">
               <nav>
-                <span>{item.pname} - {item.description}</span>
+                <span className='fs-4'>{item.pname} - {item.description}</span>
               </nav>
               <nav>
                 <span className="price_text">Color: </span>
@@ -83,7 +83,7 @@ console.log(dic);
           </div>
         ))
       )}
-    </div>
+    </>
   );
 };
 
