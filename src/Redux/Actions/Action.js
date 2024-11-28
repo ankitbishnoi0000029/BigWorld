@@ -24,3 +24,15 @@ export const incrementQuantity = (id) => ({
     type : "range",
     payload : val
   });
+  export const click =(val) =>({
+    type : "click",
+    payload : val
+  });
+  export const min =(val) =>({
+    type : "min",
+    payload : val
+  });
+  export const max =(val) =>({
+    type : "max",
+    payload : val
+  });
