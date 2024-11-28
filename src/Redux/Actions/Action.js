@@ -28,3 +28,11 @@ export const incrementQuantity = (id) => ({
     type : "click",
     payload : val
   });
+  export const min =(val) =>({
+    type : "min",
+    payload : val
+  });
+  export const max =(val) =>({
+    type : "max",
+    payload : val
+  });
