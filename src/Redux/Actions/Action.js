@@ -24,3 +24,7 @@ export const incrementQuantity = (id) => ({
     type : "range",
     payload : val
   });
+  export const click =(val) =>({
+    type : "click",
+    payload : val
+  });

@@ -166,3 +166,7 @@ body{
   .text-line{
     text-decoration: line-through;
   }
+  .pd-img {
+    width: 420px;
+    object-fit: contain;
+}

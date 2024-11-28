@@ -54,7 +54,7 @@ function Product_Detail() {
       <div className='row py-4'>
         <div className="col-5">
           <div className="img_box_big">
-            <img height={500} src={largeImage} alt="Product Detail" />
+            <img className='pd-img' height={500} width={400} src={largeImage} alt="Product Detail" />
           </div>
         </div>
         <div className="col-7">

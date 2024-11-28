@@ -1,13 +1,18 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import FactionFirst from './factionFirst'
 import { Faction } from '../../../assets/DATA/FactionData'
 import Card from '../../Popular_Products/card/Card';
 import './Faction.css'
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { Range_data } from '../../../Redux/Actions/Action';
 function Faction_section() {
-  const [newprice,setNewprice] = useState(false)
   const getRengeValue = useSelector((state)=>state.cart.rangeValue)
    const filterd = Faction.data.filter((item)=> item.price <= getRengeValue)
+   const dispatch = useDispatch()
+   console.log("first2", getRengeValue)
+   useEffect(()=>{
+   },[])
+
   return (
     <div className='container py-3'>
       <div className="row">
